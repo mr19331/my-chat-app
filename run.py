@@ -1,10 +1,10 @@
-import os 
-from flask import Flask
+import os
+from flask import flask
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return"<h1>Hello There!</h1>"
+    return "<h1>Hello, There!</h1>"
 
-app.run(host=os.getenv('IP'),port= int('PORT'),debug= True)
+app.run(host=os.getenv('IP'),port=int(os.getenv('PORT'), debug=True)
